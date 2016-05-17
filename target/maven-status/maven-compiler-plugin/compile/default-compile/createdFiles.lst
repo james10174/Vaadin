@@ -1,0 +1,7 @@
+com/honeycomb/client/MyComponentWidget.class
+com/honeycomb/client/MyComponent.class
+com/honeycomb/client/MyComponentState.class
+com/honeycomb/client/MyComponentConnector.class
+com/honeycomb/MyUI$MyUIServlet.class
+com/honeycomb/MyUI.class
+com/honeycomb/client/MyComponentServerRpc.class
