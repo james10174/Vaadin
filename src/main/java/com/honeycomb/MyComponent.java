@@ -13,7 +13,7 @@ public class MyComponent extends AbstractComponent {
                 private int clickCount = 0;
         
                 public void clicked(MouseEventDetails mouseDetails) {
-                    Notification.show("Clicked " + mouseDetails.getButtonName());
+                    Notification.show("Clicked " + clickCount++  +" " + mouseDetails.getButtonName());
                 }
             };
             registerRpc(rpc);
