@@ -1,3 +1,19 @@
+For Eclipse Che Excute commands
+
+Maven Name: Maven Clean Install
+Working Directory: ${current.project.path}
+Command line: clean install
+Preview URL: <blank>
+
+Maven Name: Maven Compile
+Working Directory: ${current.project.path}
+Command line: compile
+Preview URL: <blank>
+
+Custom Name: Debug Vaadin
+Command line: export MAVEN_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y" && mvn -f ${current.project.path} jetty:run
+Preview URL: http://${server.port.8080}/${current.project.relpath}
+
 1.0
 ==============
 
