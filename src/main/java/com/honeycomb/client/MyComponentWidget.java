@@ -1,8 +1,8 @@
 package com.honeycomb.client;
 
-import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.Button;
 
-public class MyComponentWidget extends Label {
+public class MyComponentWidget extends Button {
 
     public static final String CLASSNAME = "mycomponent";
 
