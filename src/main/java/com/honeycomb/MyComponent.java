@@ -6,17 +6,19 @@ import com.vaadin.ui.Notification;
 import com.vaadin.shared.MouseEventDetails;
 
 public class MyComponent extends AbstractComponent {
-    
+        private int clickCount = 0;
         public MyComponent() {
             MyComponentServerRpc rpc =
             new MyComponentServerRpc() {
-                private int clickCount = 0;
-        
                 public void clicked(MouseEventDetails mouseDetails) {
-                    Notification.show("Clicked " + clickCount++  +" " + mouseDetails.getButtonName());
+                    (new MyComponent()).notify(mouseDetails);
                 }
             };
+            
             registerRpc(rpc);
         }
+        public void notify(MouseEventDetails mouseDetails){
+            Notification.show("Clicked " + clickCount++  +" " + mouseDetails.getButtonName());
+        };
 
 }
